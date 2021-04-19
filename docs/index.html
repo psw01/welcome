@@ -2,40 +2,37 @@
 <html lang="en">
 
 <head>
-    <style>
-        body {
-            background-color: yellow;
-        }
-        
-        .welcome-message {
-            font-family: Arial;
-            display: grid;
-            justify-content: center;
-            align-items: center;
-            animation-duration: 2s;
-            animation-name: slidein;
-            transform: translateY(250%);
-        }
-        
-        @keyframes slidein {
-            from {
-                margin-left: 100%;
-                width: 200%;
-            }
-            to {
-                margin-left: 0%;
-                width: 100%;
-            }
-        }
-    </style>
     <title>Welcome</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
 </head>
 
 <body>
+    <div class="loader-wrapper">
+
+        <div class="ltext">-</div>
+        <div class="lmessage">Loading</div>
+        <div class="jdot-1 lmessage">.</div>
+        <div class="jdot-2 lmessage">.</div>
+        <div class="jdot-3 lmessage">.</div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+        $(window).on("load", function() {
+            $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
+
     <div class="welcome-message">
         <h1>hello there!</h1>
         <h5 align="center">comming soon...</h5>
     </div>
+
+
+
 
 </body>
 
