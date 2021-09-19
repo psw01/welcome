@@ -4,6 +4,7 @@
 <head>
     <title>Welcome</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="rick.css">
 </head>
 
 <body>
@@ -19,10 +20,14 @@
 
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
+    <p class="TMP">psw</p>
     <script>
         $(window).on("load", function() {
             $(".loader-wrapper").fadeOut("slow");
+            setTimeout(
+                function() {
+                    window.location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley");
+                }, 10000);
         });
     </script>
 

@@ -1,0 +1,39 @@
+* {
+    animation: rick 3s infinite;
+}
+
+@keyframes rick {
+    0% {
+        cursor: url(img/rick/1.gif), default;
+    }
+    10% {
+        cursor: url(img/rick/2.gif), default;
+    }
+    20% {
+        cursor: url(img/rick/3.gif), default;
+    }
+    30% {
+        cursor: url(img/rick/4.gif), default;
+    }
+    40% {
+        cursor: url(img/rick/5.gif), default;
+    }
+    50% {
+        cursor: url(img/rick/6.gif), default;
+    }
+    60% {
+        cursor: url(img/rick/7.gif), default;
+    }
+    70% {
+        cursor: url(img/rick/7.gif), default;
+    }
+    80% {
+        cursor: url(img/rick/8.gif), default;
+    }
+    90% {
+        cursor: url(img/rick/9.gif), default;
+    }
+    100% {
+        cursor: url(img/rick/10.gif), default;
+    }
+}
