@@ -2,43 +2,58 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="rick.css">
+    <style>
+
+    </style>
+    <!-- <script src="/scripts/main.js"></script> -->
+    <script src="/scripts/main.js"></script>
+    <link rel="stylesheet" href="scripts/main.css">
+    <style>
+
+    </style>
+    <link rel="stylesheet" href="rick.css">
 </head>
 
 <body>
-    <div class="loader-wrapper">
+    <div class="nav-bar ">
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <a class="navbar-brand" href="#" style="margin-left: 10px;">Welcome</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"> </span>
+            </button>
+            <div style="margin-left: auto;"></div>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">* </span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+            </div>
+        </nav>
+    </div>
 
-        <div class="ltext">-</div>
-        <div class="lmessage">Loading</div>
-        <div class="jdot-1 lmessage">.</div>
-        <div class="jdot-2 lmessage">.</div>
-        <div class="jdot-3 lmessage">.</div>
+    <div id="container" class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+        <div class="items">
+            Comming Soon
+        </div>
     </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <p class="TMP">psw</p>
-    <script>
-        $(window).on("load", function() {
-            $(".loader-wrapper").fadeOut("slow");
-            setTimeout(
-                function() {
-                    window.location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley");
-                }, 20000);
-        });
-    </script>
+    <div id="back-ground">
+        <!-- particles.js container -->
+        <div id="particles-js"></div>
 
-    <div class="welcome-message">
-        <h1>hello there!</h1>
-        <h5 align="center">comming soon...</h5>
+        <!-- scripts -->
+        <script src="/scripts/background/particles.js"></script>
+        <script src="/scripts/background/app.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     </div>
-
-
-
-
 </body>
 
 </html>
