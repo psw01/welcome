@@ -5,14 +5,16 @@
                 background-size: 100%;
                 background-color: black;
                 /* overflow: hidden; */
+                overflow-x: hidden;
             }
             
             .name-svg {
-                position: fixed;
+                position: absolute;
                 /* background-color: rgba(69, 69, 69, 0.1); */
                 left: 50%;
-                /* transform: translateX(-50%);
-                animation: moveX 2s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate; */
+                transform: translateX(-50%);
+                fill-rule: evenodd
+                /* animation: moveX 2s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate; */
             }
             
             .title {
@@ -75,6 +77,10 @@
                 color: rgb(102, 140, 161);
             }
             
+            .pswText:hover {
+                fill: aqua;
+            }
+            
             @keyframes wiggle {
                 25% {
                     transform: scale(0.8, 1.3);
@@ -101,7 +107,7 @@
                     left: 0;
                 }
                 to {
-                    left: 100%;
+                    left: 99%;
                 }
             }
             

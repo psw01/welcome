@@ -45,30 +45,13 @@ cheet("p s w", {
         function myLoop() {
             setTimeout(function() {
                 color = '#' + Math.floor(Math.random() * 16777215).toString(16);
+                color2 = '#' + Math.floor(Math.random() * 16777215).toString(16);
                 // $('svg').css({ 'fill': color });
                 $('.item').css({ "background-color": color })
-                $('.name-svg').css({ "fill": color })
+                $('.name-svg').css({ "fill": color2 })
                 myLoop();
             }, 69)
         }
         myLoop()
     }
 })
-
-
-
-
-
-
-// addEventListener("keydown", function(e) {
-//     console.log(e)
-//     if (e.code == "KeyP") {
-//         $('#PP').css({ "fill": "#3bcc27" })
-//     }
-//     if (e.code == "KeyS") {
-//         $('#SS').css({ "fill": "#3bcc27" })
-//     }
-//     if (e.code == "KeyW") {
-//         $('#WW').css({ "fill": "#3bcc27" })
-//     }
-// })
