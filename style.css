@@ -131,3 +131,21 @@
             svg {
                 fill: #cfd792;
             }
+            
+            .EasterInput {
+                /* visibility: hidden; */
+                position: fixed;
+                border-radius: 50%;
+                width: 3px;
+                height: 3px;
+                right: 0;
+                margin: 0.3rem;
+                visibility: hidden;
+                background-color: #555;
+            }
+            
+            @media only screen and (max-width: 600px) {
+                .EasterInput {
+                    visibility: visible;
+                }
+            }
